@@ -1,12 +1,70 @@
-# Atari 2600 (Stella) support for multiple assemblers
-# - DASM
-# - CC65
+# ignore all files starting with . or ~
+.*
+~*
+*.png
+*.jpg
 
-# Assembled binaries and object directories
-obj/
-a.out
-*.bin
-*.a26
+# ignore node/grunt dependency directories
+node_modules/
 
-# Add in special Atari 7800-based binaries for good measure
-*.a78
+# Ignore build directories.
+/build
+/dist
+
+# ignore composer vendor directory
+/vendor
+
+# ignore components loaded via Bower
+/bower_components
+
+# ignore jekyll build directory
+/_site
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ignore private/secret files
+*.der
+*.key
+*.pem
+
+# --------------------------------------------------------
+# BEGIN Explictly Allowed Files (i.e. do NOT ignore these)
+# --------------------------------------------------------
+
+# track these files, if they exist
+!.editorconfig
+!.env.example
+!.git-blame-ignore-revs
+!.gitignore
+!.nvmrc
+!.phpcs.xml.dist
