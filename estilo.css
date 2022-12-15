@@ -47,6 +47,10 @@ body{
     margin-left: 10px;
     width: max-content;
 }
+.img-logo{
+    text-decoration: none;
+    color: white;
+}
 
 
 /* ------Parte central del nav------ */
@@ -83,20 +87,25 @@ body{
 .registration-link{
     text-decoration: none;
     font-size: 20px;
-    width: max-content;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex
 }
 .access{
     height: 36px;
     justify-content: center;
     align-items: center;
     display: flex;
-    padding: 5px 10px;
+    padding: 0;
     border: 1px solid #202020;
     border-radius: 8PX;
 }
 .singup{
     margin-left: 10px;
     background-color: white;
+    width: 96px;
 }
 .singup a{
     color: #202020;
@@ -106,6 +115,7 @@ body{
 }
 .login{
     background-color: white;
+    width: 83px;
 }
 .login:hover{
     background-color: #18F54F;
@@ -113,4 +123,95 @@ body{
 }
 .singup:hover{
     background-color: #18F54F;
+}
+.nav-toggle {
+    color: rgb(245, 245, 245);
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 18px;
+    line-height: 56px;
+    cursor: pointer;
+  
+    display: none;
+}
+
+/* ------Tablets------ */
+@media (max-width: 905px) {
+    /* ------Parte central barra de navegacion------ */
+    .nav-menu{
+        position: fixed;
+        top: 56px;
+        left: 0;
+        width: 100%;
+        background-color: #202020;
+    }
+    .nav-menu-item{
+        margin: 0 15px;
+    }
+    
+}
+
+@media (max-width: 510px) {
+    
+    .nav{
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ------Parte izquierda del nav------ */
+    .name{
+        font-size: 20px;
+    }
+
+    /* ------Parte central del nav------ */
+    .nav-menu{
+        display: inline-block;
+        height: max-content;
+        border-top: 1px solid white;
+        display: none;
+    }
+    .nav-menu-item{
+        width: 100%;
+        height: 30px;
+    }
+    .nav-menu-link{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding-top: 3px;
+    }
+
+    /* ------Parte derecha del nav------ */
+    .nav-toggle{
+        display: block;
+    }
+    .nav-right{
+        position: fixed;
+        top: 177px;
+        left: 0;
+        width: 100%;
+        background-color: #202020;
+        margin: auto;
+        display: none;
+        height: 50px;
+    }
+    .access{
+        width: 45%;
+        margin: 0 auto;
+        padding: 0px;
+    }
+    .nav-menu_visible{
+        display: inline-block;
+    }
+    .nav-menu_visible_flex{
+        display: flex;
+    }
+    .registration-link{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex
+    }
 }
